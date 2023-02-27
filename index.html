@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metody numeryczne</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="bubbles.js"></script>
+  </head>
+  <body>
+    <h1 class="bubbles">
+      Kalkulator do całkowania numerycznego metodą Simpsona
+    </h1>
+    <main>
+      <form>
+        <div class="calculator">
+          <div class="alignDiv">
+            <label for="function">Funkcja f(x) = </label>
+            <input
+              type="text"
+              name="function"
+              required
+              minlength="1"
+              class="functionInput"
+            />
+          </div>
+          <div class="alignDiv">
+            <label for="start">Początek przedziału całkowania: </label>
+            <input
+              type="text"
+              name="start"
+              required
+              minlength="1"
+              class="startInput"
+              pattern="^-?[0-9]*"
+            />
+          </div>
+          <div class="alignDiv">
+            <label for="end">Koniec przedziału całkowania: </label>
+            <input
+              type="text"
+              name="end"
+              required
+              minlength="1"
+              class="endInput"
+              pattern="^-?[0-9]*"
+            />
+          </div>
+          <div class="alignDiv">
+            <label for="precision">Dokładność całkowania: </label>
+            <input
+              type="text"
+              name="precision"
+              required
+              minlength="1"
+              class="precisionInput"
+              pattern="^[1-9]*[24680]$"
+            />
+          </div>
+          <input type="submit" value="Oblicz" class="calculateButton" />
+        </div>
+      </form>
+      <div id="simpson"></div>
+      <div>
+        <canvas id="chart"></canvas>
+      </div>
+    </main>
+    <footer>
+      Aplikacja wykonana w ramach przedmiotu "Metody numeryczne" przez Jędrzeja
+      Drozdowskiego, Piotra Łabiaka, Maksymiliana Godyckiego-Ćwirko i Jana
+      Harłozińskiego
+    </footer>
+    <script type="module" src="calculator.js"></script>
+  </body>
+</html>

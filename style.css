@@ -1,0 +1,177 @@
+label{
+    text-align: left;
+    width: 300px;
+    display: inline-block;
+}
+
+#simpson {
+  color: rgb(47, 47, 179);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-top: 20px;
+}
+canvas#chart {
+  display: block;
+  height: 300px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+form .calculator {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.alignDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.alignDiv label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #050554;
+  font-size: 20px;
+}
+
+input.functionInput {
+  margin: 2.5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+  width: 300px;
+  opacity: 0.5;
+  border: 2px solid darkblue;
+}
+input.startInput {
+  margin: 2.5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+  width: 300px;
+  opacity: 0.5;
+  border: 2px solid darkblue;
+}
+input.endInput {
+  margin: 2.5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+  width: 300px;
+  opacity: 0.5;
+  border: 2px solid darkblue;
+}
+input.precisionInput {
+  margin: 2.5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+  width: 300px;
+  opacity: 0.5;
+  border: 2px solid darkblue;
+}
+.functionInput,
+.startInput,
+.endInput,
+.precisionInput {
+  font-style: italic;
+  font-weight: bold;
+  color: #050554;
+}
+body {
+  background-image: url("tlo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.result {
+  color: blue;
+  font-size: 32px;
+  font-weight: bold;
+  box-shadow: 4px 4px 5px #888888;
+}
+
+#chart {
+  width: 600px;
+  height: 400px;
+}
+
+.calculator {
+  text-align: center;
+}
+
+.calculateButton {
+  background-color: rgb(51, 51, 165);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  animation: buttonAnimation 1s infinite alternate;
+  margin-top: 20px;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+footer {
+  background-color: #050554;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 30px;
+  opacity: 0.5;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.bubbles {
+  text-align: center;
+  font-family: arial;
+  position: relative;
+}
+
+.bubbles {
+  font-size: 54px;
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(61, 59, 176);
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.individual-bubble {
+  text-align: center;
+  position: absolute;
+  border-radius: 100%;
+  bottom: 10px;
+  background-color: rgb(61, 76, 191);
+  z-index: 1;
+}
+
+main{
+  height: 100vh;
+}
